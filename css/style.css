@@ -1,0 +1,25 @@
+/**
+*	Palette
+*
+*	Green #6D9788
+* Navy  #1E2528
+* Deep Red #7E1C13
+* Bright Red #BF0A0D
+* Tan #E6E1C2
+*
+**/
+
+/**
+*	General Styles
+**/
+
+@font-face {
+	font-family: 'Nexa Bold';
+	src: '../fonts/Nexa Bold.otf';
+
+}
+
+@font-face {
+	font-family: 'Nexa Light';
+	src: '../fonts/Nexa Light.otf';
+}
