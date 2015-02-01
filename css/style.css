@@ -1,18 +1,15 @@
 /**
 *	Palette
-*
 *	Green #6D9788
-* 	Navy  #1E2528
-* 	Deep Red #7E1C13
-* 	Bright Red #BF0A0D
-* 	Tan #E6E1C2
-*
+* Navy  #1E2528 & rgba(30, 37, 40, 0.5)
+* Deep Red #7E1C13
+* Bright Red #BF0A0D
+* Tan #E6E1C2
 **/
 
 /**
 *	General Styles
 **/
-
 @font-face {
 	font-family: 'Nexa Bold';
 	src: '../fonts/Nexa Bold.otf';
@@ -22,4 +19,126 @@
 @font-face {
 	font-family: 'Nexa Light';
 	src: '../fonts/Nexa Light.otf';
+}
+
+.full-width {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+}
+
+.row {
+	min-width: 90% !important;
+}
+
+h1 {
+	color: white;
+	font-family: 'Nexa Bold';
+	font-size: 62px;
+}
+
+h2 {
+	font-family: 'Nexa Bold';
+	font-size: 24px;
+}
+
+.button {
+	background-color: #BF0A0D;
+	box-shadow: 5px 5px 0px 1px #7E1C13;
+	float: right;
+	font-family: 'Nexa Bold';
+	font-size: 18px;
+	opacity: 0.9;
+}
+
+.button:hover {
+	background-color: #BF0A0D;
+	opacity: 1;
+}
+
+.button:active, .button:visited, .button:focus {
+	background-color: #BF0A0D;
+}
+
+
+/**
+* Navigation
+**/
+nav {
+	max-height: 120px;
+}
+
+nav ul {
+	padding-top: 40px;
+	float: right;
+}
+
+nav a {
+	color: #1E2528;
+}
+
+nav a:hover {
+	color: #BF0A0D;
+}
+
+nav ul li {
+	display: inline;
+	font-family: 'Nexa Bold';
+	font-size: 18px;
+	list-style: none;
+	margin-left: 30px;
+	text-transform: uppercase;
+}
+
+#logo {
+	margin-top: 10px;
+}
+
+/**
+* Sidebar
+**/
+aside {
+	background-color: #6D9788;
+	float: left;
+	height: 1500px;
+}
+/**
+* Billboards
+**/
+.billboard {
+	clear: both;
+	min-height: 750px;
+}
+
+.cta {
+	width: 75%;
+}
+
+.overlay {
+	background-color: rgba(30, 37, 40, 0.5);
+	height:  100%;
+	padding: 50px 0px;
+	width: 100%;
+}
+
+#home .billboard {
+	/* background-image: url(); */
+	background-size: cover;
+}
+
+.billboard-text {
+	color: white;
+	font-family: 'Lato';
+	font-size: 32px;
+	font-weight: 200;
+	width: 80%;
+}
+
+/**
+* Footer
+**/
+
+footer {
+	clear: both;
 }
