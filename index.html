@@ -7,16 +7,29 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-		<link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/modernizr.js"></script>
 	</head>
 
 	<body id="home">
 		<div id="wrapper" class="full-width">
-			<nav id="top-nav" class="row">
+			<nav id="top-nav" class=" padded row">
 				<img id="logo" src="img/logo.png">
 
+				<ul class="show-for-medium-up">
+					<li class="nav-item"><a href="about.html">About</a></li>
+					<li class="nav-item"><a href="services.html">Services</a></li>
+					<li class="nav-item"><a href="history.html">History</a></li>
+					<li class="nav-item"><a href="video.html">Video</a></li>
+					<li class="nav-item"><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<a id="hamburger" class="show-for-small-only">
+					&#9776;
+				</a>
+			</nav>
+
+			<nav id="mobile-nav" class="show-for-small-only">
 				<ul>
 					<li class="nav-item"><a href="about.html">About</a></li>
 					<li class="nav-item"><a href="services.html">Services</a></li>
@@ -29,7 +42,8 @@
 			<div class="billboard">
 				<div class="overlay">
 					<div class="row">
-						<h1>Redemption Tabernacle Pentecostal Church</h1>
+						<div class="small-12 padded columns">
+							<h1>Redemption Tabernacle Pentecostal Church</h1>
 							<p class="billboard-text">
 								Our vision is to promote salvation, to give every man, woman, and child the opportunity to experience a relationship with God to grow and develop in ministry for the honor and glory of God, regardless to race, creed, or social status.
 							</p>
@@ -37,28 +51,31 @@
 							<a href="contact.html">
 								<button class="button">Visit Our Church</button>
 							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<aside id="side-bar">
+			<div class="full-width content">
+				<div class="row" id="sidebar-container">
+					<aside class="small-12 medium-4 padded columns">
+							<h3 class="white-subhead">Service Times</h3>
+					</aside>
 
-			</aside>
-
-			<div class="content">
-
+					<div class="main-content small-12 medium-8 padded columns">
+						<h3 class="blue-subhead">Our congregation</h3>
+						<p>Our congregation is all about family.</p>
+						<img width="250" src="img/congregation.jpg" class="yellow-shadow">
+					</div>
+				</div>
 			</div>
 
-			<footer>
-
+			<footer class="padded">
+				<p>© Redemption Tabernacle Pentecostal Church 2015</p>
 			</footer>
 		</div>
 
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/responsive-nav.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
-		<script>
-			var nav = responsiveNav(".nav-collapse");
-		</script>
 	</body>
 </html>
