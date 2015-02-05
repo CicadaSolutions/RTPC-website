@@ -101,7 +101,7 @@ h3 {
 }
 
 #top-nav {
-	min-height: 100px;
+	height: 100px;
 }
 
 #top-nav ul {
@@ -126,9 +126,31 @@ nav a:hover {
 	text-transform: uppercase;
 }
 
+#mobile-nav ul {
+	margin: 0;
+	list-style: none;
+}
+
+#mobile-nav li {
+	text-align: center;
+	border-bottom: 1px solid #1E2528;
+	width: 100%;
+}
+
 #logo {
 	margin-top: 10px;
-	position: absolute;
+	/*position: absolute;*/
+}
+
+@media only screen (max-width: 40em) {
+	#logo {
+		margin-top: 10px;
+		position: static;
+	}
+
+	#top-nav {
+		height: 200px;
+	}
 }
 
 #bruh {
@@ -177,10 +199,6 @@ nav a:hover {
 footer {
 	color: white;
 	background-color:	#1E2528;
+	padding: 45px 30px;
 	clear: both;
-	min-height: 100px;
-}
-
-footer  p {
-	margin-top: 35px;
 }
